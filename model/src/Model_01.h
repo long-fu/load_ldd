@@ -9,6 +9,9 @@ private:
     /* data */
 public:
     Module1(/* args */);
+    virtual int Init();
+    virtual int Deinit();
+    virtual int Process();
     virtual std::string readLine(const std::string &);
     ~Module1();
 };
