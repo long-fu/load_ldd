@@ -22,8 +22,8 @@ int Module1::Process() {
 }
 
 std::string Module1::readLine(const std::string & txt) {
-
-    return "model 01 return " + txt;
+    data_value = 20;
+    return "model 01 return " + txt + std::to_string(data_value);
 }
 
 Module1::~Module1()
